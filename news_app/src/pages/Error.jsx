@@ -6,8 +6,8 @@ return(
     <main>
       
         <img id='main-img'src={banner} alt="Page Not Found" />
-    <p>Error 404</p>
-     <p>Not Found</p> 
+    <p>404</p>
+     <p>I belive you got lost in space...</p> 
     </main>
     
     </>

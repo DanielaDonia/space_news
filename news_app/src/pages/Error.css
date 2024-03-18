@@ -1,17 +1,38 @@
 
     #main-img{
-        margin-top: 300px;
+        margin-top: 350px;
         border: none;
-        width: 900px;
-        border-radius: 0;
+        width: 800px;
+        border-radius: 5px;
+        border: 1px solid white;
+        animation: pulseBorder 8s infinite alternate;
 
     }
-
+body{
+    background-color: black;
+}
     p{
-        font-family: "Faster One", system-ui;
-        color: red;
-        font-size:large;
+        font-family: "Ranchers", sans-serif;
+        color: white;
+        font-size:xx-large;
 
     }
+
+
+
+    @keyframes pulseBorder {
+        0% {
+          border-color: #e1e87d;
+          box-shadow: 0 0 10px #d5bc85;
+        }
+        50% {
+          border-color: #0f132a;
+          box-shadow: 0 0 20px #fff;
+        }
+        100% {
+          border-color: #b0b732;
+          box-shadow: 0 0 10px #f9f78d;
+        }
+      }
 
     @import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");

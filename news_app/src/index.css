@@ -204,43 +204,25 @@ animation: pulseBorder 8s infinite alternate;
 
 }
 
-.buttonHandler{
-  text-align: justify;
-}
-.buttonHandler::after{
-  content: '';
-  display: inline-block;
-  width: 100%;
+.buttonHandler {
+  display: flex;
+  justify-content: space-between;
 }
 
-#previous,
-#next{
-  display: inline-block;
-  width: 100%;
-  height: 50px;
-  width:100px;
-  padding: 10px 20px;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-family: "Ranchers", sans-serif;
-  color:black;
-  background: linear-gradient(to right,  #c1c1c1,#5687ac);
-  border: none;
-  border-radius: 45%;
-  cursor: pointer;
+.arrowIcon {
+  background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 50px; 
+    color: #134973;;
+  
 }
 
-#previous{
-  float: left;
-  text-align: center;
+.arrowIcon:focus{
+  outline: none;
 }
-
-#next{
-  float: right;
-  margin-right: 15px;
-}
-
 #button-ok{
   height: 50px;
   width:50px;
@@ -313,7 +295,7 @@ footer{
 color: black;
   font-size: 35px;
   list-style-type: none;
-  margin:0;
+  margin-left:0;
   padding: 15px;
   top: 0;
   width: 100%;
@@ -334,11 +316,15 @@ color: black;
 }
 
 #about{
-  
   font-family: "Ranchers", sans-serif;
   color: black;
   font-size:large;
- 
+
 }
 
 
+#aboutUs{
+  font-size: x-large;
+
+
+}

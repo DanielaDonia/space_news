@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useTheme, useThemeUpdate} from './LightDarkTheme';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Main = ({fetchData}) => {
     const [data, setData] = useState(null);
@@ -113,8 +116,9 @@ const toggleDarkMode = () => {
                         </select>
                     </div>
                     <div className="buttonHandler">
-                        <button id='previous' value={pagination} onClick={handlerPrevious}>Previous</button>
-                        <button id='next' value={pagination} onClick={handlerNext}>Next</button>
+                        
+                        <button className='arrowIcon' value={pagination} onClick={handlerPrevious} > <FontAwesomeIcon icon={faArrowLeft} /></button>
+                        <button className='arrowIcon' value={pagination} onClick={handlerNext}><FontAwesomeIcon icon={faArrowRight} /></button>
                     </div>
                 </>
             )}
