@@ -8,7 +8,7 @@ import Error from './pages/Error';
 import Blog from './pages/blog'
 import Resports from './pages/Reports';
 import { ThemeProvider } from './componentsLayout/LightDarkTheme';
-
+import Articles from './pages/Articles';
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Banner />
         <Routes>
           <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/Articles' element={<Articles/>}/>
           <Route path='/Blog' element={<Blog/>}/>
           <Route path='/Reports' element={<Resports/>}/>
            <Route path='*' element={<Error/>} />

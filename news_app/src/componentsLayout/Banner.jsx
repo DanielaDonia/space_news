@@ -14,6 +14,9 @@ return(
             <li>
               <Link to='/'>Home</Link>
               </li>
+              <li>
+                <Link to='/Articles'>Articles</Link>
+              </li>
             <li>
                 <Link to='/Blog'>Blog </Link>
                 </li>

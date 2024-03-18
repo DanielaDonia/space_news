@@ -93,7 +93,9 @@ const toggleDarkMode = () => {
     };
 
     return (
+        
         <main className={darkTheme ? 'dark-mode' : 'light-mode'}>
+
         <button id="darkButton" onClick={toggleDarkMode}>Dark Mode</button>
         <div id='mainContainer'>
             <div id="searchContainer">

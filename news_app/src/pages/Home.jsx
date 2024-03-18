@@ -4,7 +4,9 @@ import { fetchArticles } from "../Service";
 const Home = ()=>{
 return(
     
-        <Main fetchData={fetchArticles}/>
+        <>
+        
+        </>
 
 )
 
