@@ -19,7 +19,8 @@ useEffect(() => {
 
     const fetchAPI = async () => {
         try {
-            const api = await fetchData(pagination,orderBy,setLoading);
+            setLoading(true);
+            const api = await fetchData(pagination,orderBy);
             if (!api.data) {
                 console.error('no API data', api);
                 return;
