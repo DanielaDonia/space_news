@@ -1,0 +1,17 @@
+
+    #main-img{
+        margin-top: 300px;
+        border: none;
+        width: 900px;
+        border-radius: 0;
+
+    }
+
+    p{
+        font-family: "Faster One", system-ui;
+        color: red;
+        font-size:large;
+
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
