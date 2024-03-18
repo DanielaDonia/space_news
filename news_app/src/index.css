@@ -17,7 +17,6 @@ header{
   width: 100%;
   margin:0;
   background: linear-gradient(to right,  #c1c1c1,#134973);
-
   border: 5px solid black;
 animation: pulseBorder 8s infinite alternate;
 z-index: 999;
