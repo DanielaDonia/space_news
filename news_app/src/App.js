@@ -10,20 +10,22 @@ import Resports from './pages/Reports';
 import { ThemeProvider } from './componentsLayout/LightDarkTheme';
 import Articles from './pages/Articles';
 
-
 function App() {
 
   return (
     <div className="App" >
         <ThemeProvider>
           <Banner />
-        <Routes>
+          <main>
+             <Routes>
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/Articles' element={<Articles/>}/>
           <Route path='/Blog' element={<Blog/>}/>
           <Route path='/Reports' element={<Resports/>}/>
            <Route path='*' element={<Error/>} />
         </Routes>
+          </main>
+       
         <Footer />
         </ThemeProvider>
         
